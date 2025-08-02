@@ -1,10 +1,9 @@
 from Modelos.restaurante import Restaurante
 
 restaurante_praca = Restaurante('praca', 'Gourmet')
-restaurante_mexicano = Restaurante('Mexican food', 'Mexicana')
-restaurante_japones = Restaurante('Japa', 'Japonesa')
+restaurante_praca.receber_avaliacao ('Gui', 10)
+restaurante_praca.receber_avaliacao ('Eu', 8)
 
-restaurante_mexicano.alternar_estado()
 def main():
     Restaurante.listar_restaurantes()
 
